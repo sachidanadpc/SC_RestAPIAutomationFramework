@@ -43,5 +43,31 @@ public class HttpRetryUtil {
         logger.warn("Request failed after " + maxRetries + " retries. Final status: " + (response != null ? response.getStatusCode() : "null"));
         return response;
     }
+    
+    public static boolean waitUntil(Supplier<Response> requestSupplier, int timeoutInSeconds, int expectedStatusCode) {
+        int waited = 0;
+        int interval = 2;
+
+        while (waited < timeoutInSeconds) {
+            Response response = requestSupplier.get();
+
+            if (response.getStatusCode() == expectedStatusCode) {
+                System.out.println("Expected status " + expectedStatusCode + " received after " + waited + " seconds");
+                return true;
+            }
+
+            try {
+                TimeUnit.SECONDS.sleep(interval);
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+                return false;
+            }
+
+            waited += interval;
+        }
+
+        System.out.println("Timeout reached. Expected status not received.");
+        return false;
+    }
 
 }

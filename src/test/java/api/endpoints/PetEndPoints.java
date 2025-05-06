@@ -69,6 +69,16 @@ public class PetEndPoints {
 	public static Response DeletePetData(int petId)	
 	{
 		
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		System.out.println("Delete Pet Data End points "+ petId);
+		
+		
 		String delete_post_url = getURL().getString("pet_delete_url");
 		Response response  = given().filter(new AllureRestAssured())
 		 .accept(ContentType.JSON)

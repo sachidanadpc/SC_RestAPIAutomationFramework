@@ -3,6 +3,8 @@ package api.testcases;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
@@ -44,12 +46,12 @@ public class PetTest {
 		petDataPayload = new Pet();
 		String[] statuses = {"available", "pending", "sold"};
 		
-		// Set ID
+		// Set ID		
 		petDataPayload.setId(faker.number().randomDigitNotZero());
 		
 		// Set Category
 		Category category = new Category();
-		category.setId(faker.number().numberBetween(1, 100));
+		category.setId(faker.number().numberBetween(10001, 50001));
 		category.setName(faker.animal().name());
 		petDataPayload.setCategory(category);
 		
@@ -97,6 +99,17 @@ public class PetTest {
 		
 		//validation
 		Assert.assertEquals(response.getStatusCode(),200);
+		
+		
+		// Extract fields from response
+		int id = petDataPayload.getId();
+	    
+		System.out.println("Created User ID: " + id);
+		
+		// Wait until user is available
+		boolean userId = HttpRetryUtil.waitUntil(() -> PetEndPoints.GetPetData(id), 10, 200);
+		
+		Assert.assertTrue(userId, "Id was not available after creation");
 		
 		logger.info("Create Pet executed !!");		
 	}
@@ -150,7 +163,24 @@ public class PetTest {
 		
 		responsePostUpdate.then().log().all();
 		
+		// Extract fields from response
+		int id = petDataPayload.getId();
+	    
+		System.out.println("Created User ID: " + id);
+		
+		// Wait until user is available
+		boolean userId = HttpRetryUtil.waitUntil(() -> PetEndPoints.GetPetData(id), 10, 200);
+		
+		Assert.assertTrue(userId, "Id was not available after updation");
+		
 		logger.info("Update Pet executed !!");		
+		
+		 try {
+			TimeUnit.SECONDS.sleep(10);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 	}
 	
@@ -160,12 +190,15 @@ public class PetTest {
 	@Severity(SeverityLevel.NORMAL)
 	public void testDeletePetData()
 	{
+		System.out.println("Delete Pet Data "+ petDataPayload.getId());
+		
+		
 		Response response = HttpRetryUtil.retryRequest(
 			    () -> PetEndPoints.DeletePetData(this.petDataPayload.getId()), 
 			    200, 3, 1
 			);
 		
-		System.out.println("Delete Pet Data");
+		System.out.println("Delete Pet Data ");
 		//log response
 		response.then().log().all();
 		

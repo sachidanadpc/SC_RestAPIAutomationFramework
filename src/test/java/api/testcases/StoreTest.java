@@ -81,6 +81,16 @@ public class StoreTest {
 		//validation
 		Assert.assertEquals(response.getStatusCode(),200);
 		
+		// Extract fields from response
+		int id = storePayload.getId();
+	    
+		System.out.println("Created User ID: " + id);
+		
+		// Wait until user is available
+		boolean userId = HttpRetryUtil.waitUntil(() -> StoreEndPoints.GetOrder(id), 10, 200);
+		
+		Assert.assertTrue(userId, "Id was not available after creation");
+		
 		logger.info("Create Order for Pet executed !!");		
 
 	}

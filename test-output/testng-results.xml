@@ -2,26 +2,34 @@
 <testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-06T19:24:06 IST" name="Default suite" finished-at="2025-05-06T19:24:25 IST" duration-ms="18902">
+  <suite started-at="2025-05-06T23:18:23 IST" name="Default suite" finished-at="2025-05-06T23:19:02 IST" duration-ms="38778">
     <groups>
     </groups>
-    <test started-at="2025-05-06T19:24:06 IST" name="Default test" finished-at="2025-05-06T19:24:25 IST" duration-ms="18902">
-      <class name="api.testcases.UserTest">
-        <test-method is-config="true" signature="generateTestData()[pri:0, instance:api.testcases.UserTest@7d322cad]" started-at="2025-05-06T19:24:07 IST" name="generateTestData" finished-at="2025-05-06T19:24:07 IST" duration-ms="684" status="PASS">
+    <test started-at="2025-05-06T23:18:23 IST" name="Default test" finished-at="2025-05-06T23:19:02 IST" duration-ms="38778">
+      <class name="api.testcases.PetTest">
+        <test-method is-config="true" signature="generatePetTestData()[pri:0, instance:api.testcases.PetTest@7d322cad]" started-at="2025-05-06T23:18:23 IST" name="generatePetTestData" finished-at="2025-05-06T23:18:24 IST" duration-ms="565" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- generateTestData -->
-        <test-method signature="testCreateUserData()[pri:1, instance:api.testcases.UserTest@7d322cad]" started-at="2025-05-06T19:24:07 IST" name="testCreateUserData" description="End to end  Operations about user" finished-at="2025-05-06T19:24:12 IST" duration-ms="4629" status="PASS">
+        </test-method> <!-- generatePetTestData -->
+        <test-method signature="testCreatePetData()[pri:1, instance:api.testcases.PetTest@7d322cad]" started-at="2025-05-06T23:18:24 IST" name="testCreatePetData" description="End to end Everything about your Pets" finished-at="2025-05-06T23:18:30 IST" duration-ms="6339" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCreateUserData -->
-        <test-method signature="testGetUserData()[pri:2, instance:api.testcases.UserTest@7d322cad]" started-at="2025-05-06T19:24:12 IST" name="testGetUserData" description="End to end  Get user by user name" finished-at="2025-05-06T19:24:18 IST" depends-on-methods="api.testcases.UserTest.testCreateUserData" duration-ms="6267" status="FAIL">
+        </test-method> <!-- testCreatePetData -->
+        <test-method signature="testGetPetData()[pri:2, instance:api.testcases.PetTest@7d322cad]" started-at="2025-05-06T23:18:30 IST" name="testGetPetData" description="End to end  Get user by Pet Id" finished-at="2025-05-06T23:18:32 IST" depends-on-methods="api.testcases.PetTest.testCreatePetData" duration-ms="1420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetPetData -->
+        <test-method signature="testUpdatePetData()[pri:3, instance:api.testcases.PetTest@7d322cad]" started-at="2025-05-06T23:18:32 IST" name="testUpdatePetData" description="End to end Updated existing pet" finished-at="2025-05-06T23:18:46 IST" depends-on-methods="api.testcases.PetTest.testCreatePetData" duration-ms="13923" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdatePetData -->
+        <test-method signature="testDeletePetData()[pri:4, instance:api.testcases.PetTest@7d322cad]" started-at="2025-05-06T23:18:46 IST" name="testDeletePetData" description="End to end  Delete user by petId" finished-at="2025-05-06T23:19:02 IST" depends-on-methods="api.testcases.PetTest.testCreatePetData" duration-ms="16428" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [200] but found [404]]]>
+              <![CDATA[expected [200] but found [405]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [200] but found [404]
+              <![CDATA[java.lang.AssertionError: expected [200] but found [405]
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1578)
 at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -29,7 +37,7 @@ at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:1419)
 at org.testng.Assert.assertEquals(Assert.java:1383)
 at org.testng.Assert.assertEquals(Assert.java:1429)
-at api.testcases.UserTest.testGetUserData(UserTest.java:106)
+at api.testcases.PetTest.testDeletePetData(PetTest.java:206)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -61,16 +69,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGetUserData -->
-        <test-method signature="testUpdateUserData()[pri:3, instance:api.testcases.UserTest@7d322cad]" started-at="2025-05-06T19:24:18 IST" name="testUpdateUserData" description="End to end  Updated user by user name" finished-at="2025-05-06T19:24:22 IST" depends-on-methods="api.testcases.UserTest.testCreateUserData" duration-ms="4113" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUpdateUserData -->
-        <test-method signature="testDeleteUserData()[pri:4, instance:api.testcases.UserTest@7d322cad]" started-at="2025-05-06T19:24:22 IST" name="testDeleteUserData" description="End to end  Delete user by user name" finished-at="2025-05-06T19:24:25 IST" depends-on-methods="api.testcases.UserTest.testCreateUserData" duration-ms="3097" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDeleteUserData -->
-      </class> <!-- api.testcases.UserTest -->
+        </test-method> <!-- testDeletePetData -->
+      </class> <!-- api.testcases.PetTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

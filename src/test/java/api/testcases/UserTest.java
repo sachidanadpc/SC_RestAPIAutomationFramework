@@ -68,6 +68,15 @@ public class UserTest {
 		//validation
 		Assert.assertEquals(response.getStatusCode(),200);
 		
+		// Extract fields from response
+	    String usernameVal = userPayload.getUsername();   
+	    System.out.println("Created Username: " + usernameVal);
+		
+		// Wait until user is available
+		boolean userAvailable = HttpRetryUtil.waitUntil(() -> UserEndpoints.GetUser(usernameVal), 10, 200);
+		
+	    Assert.assertTrue(userAvailable, "User was not available after creation");
+	    
 		logger.info("Create User executed !!");		
 		
 	}
@@ -112,7 +121,7 @@ public class UserTest {
 		System.out.println("Update User Data");
 		//log response
 		response.then().log().all();
-		
+				
 		//validation
 		Assert.assertEquals(response.getStatusCode(),200);	
 		

@@ -9,11 +9,11 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">18,902</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">38,778</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">api.testcases.UserTest</td><td><a href="#m0">testGetUserData</a></td><td rowspan="1">1746539652405</td><td rowspan="1">6267</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">api.testcases.UserTest</td><td><a href="#m1">testCreateUserData</a></td><td rowspan="1">1746539647718</td><td rowspan="1">4629</td></tr><tr class="passedeven"><td><a href="#m2">testDeleteUserData</a></td><td rowspan="1">1746539662798</td><td rowspan="1">3097</td></tr><tr class="passedeven"><td><a href="#m3">testUpdateUserData</a></td><td rowspan="1">1746539658678</td><td rowspan="1">4113</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">api.testcases.PetTest</td><td><a href="#m0">testDeletePetData</a></td><td rowspan="1">1746553726120</td><td rowspan="1">16428</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">api.testcases.PetTest</td><td><a href="#m1">testCreatePetData</a></td><td rowspan="1">1746553704376</td><td rowspan="1">6339</td></tr><tr class="passedeven"><td><a href="#m2">testGetPetData</a></td><td rowspan="1">1746553710768</td><td rowspan="1">1420</td></tr><tr class="passedeven"><td><a href="#m3">testUpdatePetData</a></td><td rowspan="1">1746553712191</td><td rowspan="1">13923</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">api.testcases.UserTest#testGetUserData</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [200] but found [404]
+<h2>Default test</h2><h3 id="m0">api.testcases.PetTest#testDeletePetData</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [200] but found [405]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -21,7 +21,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:1419)
 	at org.testng.Assert.assertEquals(Assert.java:1383)
 	at org.testng.Assert.assertEquals(Assert.java:1429)
-	at api.testcases.UserTest.testGetUserData(UserTest.java:106)
+	at api.testcases.PetTest.testDeletePetData(PetTest.java:206)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -49,8 +49,8 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">api.testcases.UserTest#testCreateUserData</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">api.testcases.UserTest#testDeleteUserData</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">api.testcases.UserTest#testUpdateUserData</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">api.testcases.PetTest#testCreatePetData</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">api.testcases.PetTest#testGetPetData</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">api.testcases.PetTest#testUpdatePetData</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
