@@ -107,7 +107,6 @@ public class PetTest {
 	@Severity(SeverityLevel.NORMAL)
 	public void testGetPetData()
 	{
-		//Response response =  PetEndPoints.GetPetData(this.petDataPayload.getId());
 		
 		Response response = HttpRetryUtil.retryRequest(
 			    () -> PetEndPoints.GetPetData(this.petDataPayload.getId()), 
@@ -131,8 +130,6 @@ public class PetTest {
 	@Description("Update Pet API")
 	@Severity(SeverityLevel.NORMAL)
 	public void testUpdatePetData()	{
-		
-		//Response response =  PetEndPoints.UpdatePetData(petDataPayload);
 		
 		Response response = HttpRetryUtil.retryRequest(
 			    () -> PetEndPoints.UpdatePetData(petDataPayload), 
@@ -163,8 +160,6 @@ public class PetTest {
 	@Severity(SeverityLevel.NORMAL)
 	public void testDeletePetData()
 	{
-		//Response response =  PetEndPoints.DeletePetData(this.petDataPayload.getId());
-		
 		Response response = HttpRetryUtil.retryRequest(
 			    () -> PetEndPoints.DeletePetData(this.petDataPayload.getId()), 
 			    200, 3, 1
