@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-06T11:08:34 IST" name="Default suite" finished-at="2025-05-06T11:08:41 IST" duration-ms="7622">
+    <groups>
+    </groups>
+    <test started-at="2025-05-06T11:08:34 IST" name="Default test" finished-at="2025-05-06T11:08:41 IST" duration-ms="7622">
+      <class name="api.testcases.UserTest2">
+        <test-method is-config="true" signature="generateTestData()[pri:0, instance:api.testcases.UserTest2@38425407]" started-at="2025-05-06T11:08:34 IST" name="generateTestData" finished-at="2025-05-06T11:08:35 IST" duration-ms="754" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateTestData -->
+        <test-method signature="testCreateUserData()[pri:1, instance:api.testcases.UserTest2@38425407]" started-at="2025-05-06T11:08:35 IST" name="testCreateUserData" finished-at="2025-05-06T11:08:37 IST" duration-ms="2556" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateUserData -->
+        <test-method signature="testGetUserData()[pri:2, instance:api.testcases.UserTest2@38425407]" started-at="2025-05-06T11:08:37 IST" name="testGetUserData" finished-at="2025-05-06T11:08:38 IST" duration-ms="1086" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetUserData -->
+        <test-method signature="testUpdateUserData()[pri:3, instance:api.testcases.UserTest2@38425407]" started-at="2025-05-06T11:08:38 IST" name="testUpdateUserData" finished-at="2025-05-06T11:08:40 IST" duration-ms="2120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateUserData -->
+        <test-method signature="testDeleteUserData()[pri:4, instance:api.testcases.UserTest2@38425407]" started-at="2025-05-06T11:08:40 IST" name="testDeleteUserData" finished-at="2025-05-06T11:08:41 IST" duration-ms="1064" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteUserData -->
+      </class> <!-- api.testcases.UserTest2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
