@@ -72,7 +72,7 @@ public class UserTest {
 		logger.info("Get User executed !!");
 		
 		try {
-			Thread.sleep(1000);
+			Thread.sleep(2000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -102,7 +102,7 @@ public class UserTest {
 		logger.info("Update User executed !!");
 		
 		try {
-			Thread.sleep(1000);
+			Thread.sleep(2000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
