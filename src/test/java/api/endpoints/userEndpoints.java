@@ -1,14 +1,14 @@
 package api.endpoints;
 
 import static io.restassured.RestAssured.given;
-import api.payload.user;
+import api.payload.User;
 import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-public class userEndpoints {
+public class UserEndpoints {
 	
-	public static Response createUser(user payload)	
+	public static Response createUser(User payload)	
 	{
 		Response response  = given().filter(new AllureRestAssured())
 		 .accept(ContentType.JSON)
@@ -37,7 +37,7 @@ public class userEndpoints {
 				return response;
 	}
 	
-	public static Response UpdateUser(String userName, user payload)	
+	public static Response UpdateUser(String userName, User payload)	
 	{
 		
 		Response response  = given().filter(new AllureRestAssured())

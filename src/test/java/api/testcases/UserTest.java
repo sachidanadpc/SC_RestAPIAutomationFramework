@@ -1,13 +1,16 @@
 package api.testcases;
 
 import org.apache.logging.log4j.Logger;
+
 import org.apache.logging.log4j.LogManager;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import org.testng.annotations.Test;
 import com.github.javafaker.Faker;
-import api.endpoints.userEndpoints;
-import api.payload.user;
+
+import api.endpoints.UserEndpoints;
+import api.payload.User;
+import api.utilities.HttpRetryUtil;
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
@@ -22,7 +25,7 @@ import io.restassured.response.Response;
 public class UserTest {	
 	
 	Faker faker;
-	user userPayload;
+	User userPayload;
 	public static Logger logger;
 	
 	
@@ -31,7 +34,7 @@ public class UserTest {
 	public void generateTestData()
 	{		
 		faker = new Faker();			
-		userPayload = new user();
+		userPayload = new User();
 		
 		userPayload.setId(faker.idNumber().hashCode());
 		userPayload.setUsername(faker.name().username());
@@ -53,7 +56,11 @@ public class UserTest {
 	
 	public void testCreateUserData()
 	{
-		Response response =  userEndpoints.createUser(userPayload);					
+		
+		Response response = HttpRetryUtil.retryRequest(
+			    () -> UserEndpoints.createUser(userPayload), 
+			    200, 3, 1
+			);
 	
 		//log response
 		response.then().log().all();
@@ -61,24 +68,21 @@ public class UserTest {
 		//validation
 		Assert.assertEquals(response.getStatusCode(),200);
 		
-		logger.info("Create User executed !!");
+		logger.info("Create User executed !!");		
 		
-		try {
-			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 	}
 	
 	
 	@Story("Get User")
 	@Test(priority=2, description= "End to end  Get user by user name", dependsOnMethods = {"testCreateUserData"})
-	@Description("Get User POST API")
+	@Description("Get User API")
 	@Severity(SeverityLevel.CRITICAL)
 	public void testGetUserData()
 	{
-		Response response =  userEndpoints.GetUser(this.userPayload.getUsername());
+		Response response = HttpRetryUtil.retryRequest(
+			    () -> UserEndpoints.GetUser(this.userPayload.getUsername()), 
+			    200, 3, 1
+			);
 		
 		System.out.println("Get User Data");
 				
@@ -88,24 +92,22 @@ public class UserTest {
 		//validation
 		Assert.assertEquals(response.getStatusCode(),200);		
 		
-		logger.info("Get User executed !!");
+		logger.info("Get User executed !!");		
 		
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 	}
 	
 	@Story("Update User")
 	@Test(priority=3, description= "End to end  Updated user by user name", dependsOnMethods = {"testCreateUserData"})
-	@Description("Update User POST API")
+	@Description("Update User PUT API")
 	@Severity(SeverityLevel.CRITICAL)
 	public void testUpdateUserData()
 	{
 		userPayload.setFirstName(faker.name().firstName());
-		Response response =  userEndpoints.UpdateUser(this.userPayload.getUsername(), userPayload);
+		
+		Response response = HttpRetryUtil.retryRequest(
+			    () -> UserEndpoints.UpdateUser(this.userPayload.getUsername(), userPayload), 
+			    200, 3, 1
+			);
 		
 		System.out.println("Update User Data");
 		//log response
@@ -115,30 +117,27 @@ public class UserTest {
 		Assert.assertEquals(response.getStatusCode(),200);	
 		
 		//Read data is updated or not
-		Response responsePostUpdate = userEndpoints.GetUser(this.userPayload.getUsername());
+		Response responsePostUpdate = UserEndpoints.GetUser(this.userPayload.getUsername());
 		
 		System.out.println("After Update User Data");
 		
 		responsePostUpdate.then().log().all();
 		
-		logger.info("Update User executed !!");
-		
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		logger.info("Update User executed !!");		
+	
 		
 	}
 	
 	@Story("Delete User")
 	@Test(priority=4, description= "End to end  Delete user by user name", dependsOnMethods = {"testCreateUserData"})
-	@Description("Delete User POST API")
+	@Description("Delete User API")
 	@Severity(SeverityLevel.CRITICAL)
 	public void testDeleteUserData()
 	{
-		Response response =  userEndpoints.DeleteUser(this.userPayload.getUsername());
+		Response response = HttpRetryUtil.retryRequest(
+			    () -> UserEndpoints.DeleteUser(this.userPayload.getUsername()), 
+			    200, 3, 1
+			);
 		
 		System.out.println("Delete User Data");
 		//log response
@@ -148,13 +147,6 @@ public class UserTest {
 		Assert.assertEquals(response.getStatusCode(),200);	
 		
 		logger.info("Delete User executed !!");
-		
-		try {
-			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 	}
 	
 }

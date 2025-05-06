@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="16.684" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="37.133" tests="15" errors="0" skipped="0" failures="2">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\Sachidanand.C\AppData\Local\Temp\surefire10183241335350959275\surefirebooter1417792620737129609.jar C:\Users\Sachidanand.C\AppData\Local\Temp\surefire10183241335350959275 2025-05-06T14-44-11_287-jvmRun1 surefire12451593629935170163tmp surefire_010157521017800036020tmp"/>
+    <property name="sun.java.command" value="C:\Users\Sachidanand.C\AppData\Local\Temp\surefire9661523421730379201\surefirebooter2467195975789949693.jar C:\Users\Sachidanand.C\AppData\Local\Temp\surefire9661523421730379201 2025-05-06T19-28-11_892-jvmRun1 surefire6228804808392788794tmp surefire_07538113728898211505tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\automation\RestAssuredAutomationFramework\target\test-classes;C:\automation\RestAssuredAutomationFramework\target\classes;C:\Users\Sachidanand.C\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\Sachidanand.C\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\Sachidanand.C\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\Sachidanand.C\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Sachidanand.C\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Sachidanand.C\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Sachidanand.C\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Sachidanand.C\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Sachidanand.C\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Sachidanand.C\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\Sachidanand.C\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\Sachidanand.C\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\Sachidanand.C\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\Sachidanand.C\.m2\repository\org\testng\testng\7.10.1\testng-7.10.1.jar;C:\Users\Sachidanand.C\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Sachidanand.C\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Sachidanand.C\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Sachidanand.C\.m2\repository\com\github\scribejava\scribejava-apis\8.3.3\scribejava-apis-8.3.3.jar;C:\Users\Sachidanand.C\.m2\repository\com\github\scribejava\scribejava-core\8.3.3\scribejava-core-8.3.3.jar;C:\Users\Sachidanand.C\.m2\repository\com\github\scribejava\scribejava-java8\8.3.3\scribejava-java8-8.3.3.jar;C:\Users\Sachidanand.C\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.14.0\jackson-databind-2.14.0.jar;C:\Users\Sachidanand.C\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.14.0\jackson-annotations-2.14.0.jar;C:\Users\Sachidanand.C\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.14.0\jackson-core-2.14.0.jar;C:\Users\Sachidanand.C\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.11\json-schema-validator-2.2.11.jar;C:\Users\Sachidanand.C\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.10\json-schema-core-1.2.10.jar;C:\Users\Sachidanand.C\.m2\repository\com\github\java-json-tools\jackson-coreutils\1.9\jackson-coreutils-1.9.jar;C:\Users\Sachidanand.C\.m2\repository\com\google\guava\guava\16.0.1\guava-16.0.1.jar;C:\Users\Sachidanand.C\.m2\repository\com\github\fge\msg-simple\1.1\msg-simple-1.1.jar;C:\Users\Sachidanand.C\.m2\repository\com\github\fge\btf\1.2\btf-1.2.jar;C:\Users\Sachidanand.C\.m2\repository\com\github\fge\uri-template\0.9\uri-template-0.9.jar;C:\Users\Sachidanand.C\.m2\repository\org\mozilla\rhino\1.7.7.1\rhino-1.7.7.1.jar;C:\Users\Sachidanand.C\.m2\repository\com\sun\mail\mailapi\1.6.1\mailapi-1.6.1.jar;C:\Users\Sachidanand.C\.m2\repository\javax\activation\activation\1.1\activation-1.1.jar;C:\Users\Sachidanand.C\.m2\repository\joda-time\joda-time\2.9.7\joda-time-2.9.7.jar;C:\Users\Sachidanand.C\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.0.0\libphonenumber-8.0.0.jar;C:\Users\Sachidanand.C\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Sachidanand.C\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.3\jopt-simple-5.0.3.jar;C:\Users\Sachidanand.C\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\Sachidanand.C\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\Sachidanand.C\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\Sachidanand.C\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\Sachidanand.C\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\Sachidanand.C\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\Sachidanand.C\.m2\repository\org\apache\poi\poi\5.4.0\poi-5.4.0.jar;C:\Users\Sachidanand.C\.m2\repository\commons-codec\commons-codec\1.17.1\commons-codec-1.17.1.jar;C:\Users\Sachidanand.C\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Sachidanand.C\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Sachidanand.C\.m2\repository\commons-io\commons-io\2.18.0\commons-io-2.18.0.jar;C:\Users\Sachidanand.C\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\Sachidanand.C\.m2\repository\org\apache\poi\poi-ooxml\5.4.0\poi-ooxml-5.4.0.jar;C:\Users\Sachidanand.C\.m2\repository\org\apache\poi\poi-ooxml-lite\5.4.0\poi-ooxml-lite-5.4.0.jar;C:\Users\Sachidanand.C\.m2\repository\org\apache\xmlbeans\xmlbeans\5.3.0\xmlbeans-5.3.0.jar;C:\Users\Sachidanand.C\.m2\repository\org\apache\commons\commons-compress\1.27.1\commons-compress-1.27.1.jar;C:\Users\Sachidanand.C\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\Sachidanand.C\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\Sachidanand.C\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\Sachidanand.C\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\Sachidanand.C\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\Sachidanand.C\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\Sachidanand.C\.m2\repository\org\apache\logging\log4j\log4j-core\2.20.0\log4j-core-2.20.0.jar;C:\Users\Sachidanand.C\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\Users\Sachidanand.C\.m2\repository\io\qameta\allure\allure-testng\2.29.1\allure-testng-2.29.1.jar;C:\Users\Sachidanand.C\.m2\repository\io\qameta\allure\allure-java-commons\2.29.1\allure-java-commons-2.29.1.jar;C:\Users\Sachidanand.C\.m2\repository\io\qameta\allure\allure-model\2.29.1\allure-model-2.29.1.jar;C:\Users\Sachidanand.C\.m2\repository\io\qameta\allure\allure-test-filter\2.29.1\allure-test-filter-2.29.1.jar;C:\Users\Sachidanand.C\.m2\repository\io\qameta\allure\allure-rest-assured\2.29.1\allure-rest-assured-2.29.1.jar;C:\Users\Sachidanand.C\.m2\repository\io\qameta\allure\allure-attachments\2.29.1\allure-attachments-2.29.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Sachidanand.C\AppData\Local\Temp\surefire10183241335350959275\surefirebooter1417792620737129609.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Sachidanand.C\AppData\Local\Temp\surefire9661523421730379201\surefirebooter2467195975789949693.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.8+9-LTS-211"/>
@@ -57,11 +57,13 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testCreateUserData" classname="api.testcases.UserTest" time="4.818">
+  <testcase name="testCreateUserData" classname="api.testcases.UserTest" time="2.578">
     <system-out><![CDATA[On Start method invoked....
 Name of test method started:testCreateUserData
+[INFO ] 2025-05-06 19:28:14.455 [main] HttpRetryUtil - Attempt 1 of HTTP request
+[INFO ] 2025-05-06 19:28:16.919 [main] HttpRetryUtil - Request succeeded on attempt 1
 HTTP/1.1 200 OK
-Date: Tue, 06 May 2025 09:14:18 GMT
+Date: Tue, 06 May 2025 13:58:16 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -73,9 +75,9 @@ Server: Jetty(9.2.9.v20150224)
 {
     "code": 200,
     "type": "unknown",
-    "message": "751021317"
+    "message": "414225167"
 }
-[INFO ] 2025-05-06 14:44:18.613 [main] RestAssuredAutomationFramework - Create User executed !!
+[INFO ] 2025-05-06 19:28:16.926 [main] RestAssuredAutomationFramework - Create User executed !!
 Name of test method sucessfully executed:testCreateUserData
 ]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
@@ -83,11 +85,13 @@ SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="testGetUserData" classname="api.testcases.UserTest" time="3.112">
+  <testcase name="testGetUserData" classname="api.testcases.UserTest" time="1.122">
     <system-out><![CDATA[Name of test method started:testGetUserData
+[INFO ] 2025-05-06 19:28:17.002 [main] HttpRetryUtil - Attempt 1 of HTTP request
+[INFO ] 2025-05-06 19:28:18.108 [main] HttpRetryUtil - Request succeeded on attempt 1
 Get User Data
 HTTP/1.1 200 OK
-Date: Tue, 06 May 2025 09:14:20 GMT
+Date: Tue, 06 May 2025 13:58:17 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -97,24 +101,26 @@ Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 Server: Jetty(9.2.9.v20150224)
 
 {
-    "id": 751021317,
-    "username": "madalyn.grimes",
-    "firstName": "Thaddeus",
-    "lastName": "Howe",
-    "email": "toby.schinner@example.com",
-    "password": "c5al735",
-    "phone": "1-811-939-4597",
+    "id": 414225167,
+    "username": "fredia.bode",
+    "firstName": "Gail",
+    "lastName": "Johnston",
+    "email": "shalonda.reichel@example.com",
+    "password": "vwkvnh8",
+    "phone": "380.748.2113",
     "userStatus": 0
 }
-[INFO ] 2025-05-06 14:44:20.800 [main] RestAssuredAutomationFramework - Get User executed !!
+[INFO ] 2025-05-06 19:28:18.109 [main] RestAssuredAutomationFramework - Get User executed !!
 Name of test method sucessfully executed:testGetUserData
 ]]></system-out>
   </testcase>
-  <testcase name="testUpdateUserData" classname="api.testcases.UserTest" time="4.156">
+  <testcase name="testUpdateUserData" classname="api.testcases.UserTest" time="2.148">
     <system-out><![CDATA[Name of test method started:testUpdateUserData
+[INFO ] 2025-05-06 19:28:18.115 [main] HttpRetryUtil - Attempt 1 of HTTP request
+[INFO ] 2025-05-06 19:28:19.170 [main] HttpRetryUtil - Request succeeded on attempt 1
 Update User Data
 HTTP/1.1 200 OK
-Date: Tue, 06 May 2025 09:14:23 GMT
+Date: Tue, 06 May 2025 13:58:18 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -126,11 +132,11 @@ Server: Jetty(9.2.9.v20150224)
 {
     "code": 200,
     "type": "unknown",
-    "message": "751021317"
+    "message": "414225167"
 }
 After Update User Data
 HTTP/1.1 200 OK
-Date: Tue, 06 May 2025 09:14:24 GMT
+Date: Tue, 06 May 2025 13:58:19 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -140,24 +146,26 @@ Access-Control-Allow-Headers: Content-Type, api_key, Authorization
 Server: Jetty(9.2.9.v20150224)
 
 {
-    "id": 751021317,
-    "username": "madalyn.grimes",
-    "firstName": "Scott",
-    "lastName": "Howe",
-    "email": "toby.schinner@example.com",
-    "password": "c5al735",
-    "phone": "1-811-939-4597",
+    "id": 414225167,
+    "username": "fredia.bode",
+    "firstName": "Helaine",
+    "lastName": "Johnston",
+    "email": "shalonda.reichel@example.com",
+    "password": "vwkvnh8",
+    "phone": "380.748.2113",
     "userStatus": 0
 }
-[INFO ] 2025-05-06 14:44:24.948 [main] RestAssuredAutomationFramework - Update User executed !!
+[INFO ] 2025-05-06 19:28:20.264 [main] RestAssuredAutomationFramework - Update User executed !!
 Name of test method sucessfully executed:testUpdateUserData
 ]]></system-out>
   </testcase>
-  <testcase name="testDeleteUserData" classname="api.testcases.UserTest" time="2.099">
+  <testcase name="testDeleteUserData" classname="api.testcases.UserTest" time="1.046">
     <system-out><![CDATA[Name of test method started:testDeleteUserData
+[INFO ] 2025-05-06 19:28:20.271 [main] HttpRetryUtil - Attempt 1 of HTTP request
+[INFO ] 2025-05-06 19:28:21.305 [main] HttpRetryUtil - Request succeeded on attempt 1
 Delete User Data
 HTTP/1.1 200 OK
-Date: Tue, 06 May 2025 09:14:27 GMT
+Date: Tue, 06 May 2025 13:58:21 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -169,9 +177,450 @@ Server: Jetty(9.2.9.v20150224)
 {
     "code": 200,
     "type": "unknown",
-    "message": "madalyn.grimes"
+    "message": "fredia.bode"
 }
-[INFO ] 2025-05-06 14:44:28.054 [main] RestAssuredAutomationFramework - Delete User executed !!
+[INFO ] 2025-05-06 19:28:21.305 [main] RestAssuredAutomationFramework - Delete User executed !!
+Name of test method sucessfully executed:testDeleteUserData
+]]></system-out>
+  </testcase>
+  <testcase name="testCreatePetData" classname="api.testcases.PetTest" time="1.132">
+    <system-out><![CDATA[Name of test method started:testCreatePetData
+[INFO ] 2025-05-06 19:28:21.349 [main] HttpRetryUtil - Attempt 1 of HTTP request
+[INFO ] 2025-05-06 19:28:22.468 [main] HttpRetryUtil - Request succeeded on attempt 1
+HTTP/1.1 200 OK
+Date: Tue, 06 May 2025 13:58:22 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 2,
+    "category": {
+        "id": 77,
+        "name": "trout"
+    },
+    "name": "Missy",
+    "photoUrls": [
+        "www.amal-carter.info"
+    ],
+    "tags": [
+        {
+            "id": 123,
+            "name": "lavender"
+        }
+    ],
+    "status": "sold"
+}
+[INFO ] 2025-05-06 19:28:22.469 [main] RestAssuredAutomationFramework - Create Pet executed !!
+Name of test method sucessfully executed:testCreatePetData
+]]></system-out>
+  </testcase>
+  <testcase name="testGetPetData" classname="api.testcases.PetTest" time="1.031">
+    <system-out><![CDATA[Name of test method started:testGetPetData
+[INFO ] 2025-05-06 19:28:22.473 [main] HttpRetryUtil - Attempt 1 of HTTP request
+[INFO ] 2025-05-06 19:28:23.499 [main] HttpRetryUtil - Request succeeded on attempt 1
+Get Pet Data
+HTTP/1.1 200 OK
+Date: Tue, 06 May 2025 13:58:23 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 2,
+    "category": {
+        "id": 1,
+        "name": "Dogs"
+    },
+    "name": "Fluffy_2",
+    "photoUrls": [
+        "https://example.com/pet-photo.jpg"
+    ],
+    "tags": [
+        {
+            "id": 1,
+            "name": "friendly"
+        },
+        {
+            "id": 2,
+            "name": "trained"
+        }
+    ],
+    "status": "available"
+}
+[INFO ] 2025-05-06 19:28:23.499 [main] RestAssuredAutomationFramework - Get Pet executed !!
+Name of test method sucessfully executed:testGetPetData
+]]></system-out>
+  </testcase>
+  <testcase name="testUpdatePetData" classname="api.testcases.PetTest" time="2.175">
+    <system-out><![CDATA[Name of test method started:testUpdatePetData
+[INFO ] 2025-05-06 19:28:23.503 [main] HttpRetryUtil - Attempt 1 of HTTP request
+[INFO ] 2025-05-06 19:28:24.607 [main] HttpRetryUtil - Request succeeded on attempt 1
+Update Pet Data
+HTTP/1.1 200 OK
+Date: Tue, 06 May 2025 13:58:24 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 2,
+    "category": {
+        "id": 77,
+        "name": "trout"
+    },
+    "name": "Missy",
+    "photoUrls": [
+        "www.amal-carter.info"
+    ],
+    "tags": [
+        {
+            "id": 123,
+            "name": "lavender"
+        }
+    ],
+    "status": "sold"
+}
+After Update Pet Data
+HTTP/1.1 200 OK
+Date: Tue, 06 May 2025 13:58:25 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 2,
+    "category": {
+        "id": 77,
+        "name": "trout"
+    },
+    "name": "Missy",
+    "photoUrls": [
+        "www.amal-carter.info"
+    ],
+    "tags": [
+        {
+            "id": 123,
+            "name": "lavender"
+        }
+    ],
+    "status": "sold"
+}
+[INFO ] 2025-05-06 19:28:25.677 [main] RestAssuredAutomationFramework - Update Pet executed !!
+Name of test method sucessfully executed:testUpdatePetData
+]]></system-out>
+  </testcase>
+  <testcase name="testDeletePetData" classname="api.testcases.PetTest" time="6.264">
+    <failure message="expected [200] but found [405]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [200] but found [405]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at org.testng.Assert.assertEquals(Assert.java:1429)
+	at api.testcases.PetTest.testDeletePetData(PetTest.java:178)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]></failure>
+    <system-out><![CDATA[Name of test method started:testDeletePetData
+[INFO ] 2025-05-06 19:28:25.683 [main] HttpRetryUtil - Attempt 1 of HTTP request
+[INFO ] 2025-05-06 19:28:27.774 [main] HttpRetryUtil - Attempt 2 of HTTP request
+[INFO ] 2025-05-06 19:28:29.861 [main] HttpRetryUtil - Attempt 3 of HTTP request
+[WARN ] 2025-05-06 19:28:31.922 [main] HttpRetryUtil - Request failed after 3 retries. Final status: 405
+Delete Pet Data
+HTTP/1.1 405 Method Not Allowed
+Date: Tue, 06 May 2025 13:58:30 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 405,
+    "type": "unknown"
+}
+Name of test method failed:testDeletePetData
+]]></system-out>
+  </testcase>
+  <testcase name="testCreateAnOrderData" classname="api.testcases.StoreTest" time="1.075">
+    <system-out><![CDATA[Name of test method started:testCreateAnOrderData
+[INFO ] 2025-05-06 19:28:31.946 [main] HttpRetryUtil - Attempt 1 of HTTP request
+[INFO ] 2025-05-06 19:28:33.011 [main] HttpRetryUtil - Request succeeded on attempt 1
+HTTP/1.1 200 OK
+Date: Tue, 06 May 2025 13:58:32 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 2826,
+    "petId": 689,
+    "quantity": 6,
+    "shipDate": "2025-05-06T19:28:31.943+0000",
+    "status": "delivered",
+    "complete": true
+}
+[INFO ] 2025-05-06 19:28:33.012 [main] RestAssuredAutomationFramework - Create Order for Pet executed !!
+Name of test method sucessfully executed:testCreateAnOrderData
+]]></system-out>
+  </testcase>
+  <testcase name="testGetAnOrderData" classname="api.testcases.StoreTest" time="6.237">
+    <failure message="expected [200] but found [404]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at org.testng.Assert.assertEquals(Assert.java:1429)
+	at api.testcases.StoreTest.testGetAnOrderData(StoreTest.java:107)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]></failure>
+    <system-out><![CDATA[Name of test method started:testGetAnOrderData
+[INFO ] 2025-05-06 19:28:33.020 [main] HttpRetryUtil - Attempt 1 of HTTP request
+[INFO ] 2025-05-06 19:28:35.099 [main] HttpRetryUtil - Attempt 2 of HTTP request
+[INFO ] 2025-05-06 19:28:37.168 [main] HttpRetryUtil - Attempt 3 of HTTP request
+[WARN ] 2025-05-06 19:28:39.241 [main] HttpRetryUtil - Request failed after 3 retries. Final status: 404
+Get Order Data
+HTTP/1.1 404 Not Found
+Date: Tue, 06 May 2025 13:58:37 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 1,
+    "type": "error",
+    "message": "Order not found"
+}
+Name of test method failed:testGetAnOrderData
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteAnOrderData" classname="api.testcases.StoreTest" time="5.257">
+    <system-out><![CDATA[Name of test method started:testDeleteAnOrderData
+[INFO ] 2025-05-06 19:28:39.253 [main] HttpRetryUtil - Attempt 1 of HTTP request
+[INFO ] 2025-05-06 19:28:41.314 [main] HttpRetryUtil - Attempt 2 of HTTP request
+[INFO ] 2025-05-06 19:28:43.390 [main] HttpRetryUtil - Attempt 3 of HTTP request
+[INFO ] 2025-05-06 19:28:44.503 [main] HttpRetryUtil - Request succeeded on attempt 3
+Delete Order Data
+HTTP/1.1 200 OK
+Date: Tue, 06 May 2025 13:58:44 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "2826"
+}
+[INFO ] 2025-05-06 19:28:44.505 [main] RestAssuredAutomationFramework - Delete Order executed !!
+Name of test method sucessfully executed:testDeleteAnOrderData
+]]></system-out>
+  </testcase>
+  <testcase name="testCreateUserData" classname="api.testcases.UserTest2" time="1.095">
+    <system-out><![CDATA[Name of test method started:testCreateUserData
+HTTP/1.1 200 OK
+Date: Tue, 06 May 2025 13:58:45 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "778872501"
+}
+[INFO ] 2025-05-06 19:28:45.613 [main] RestAssuredAutomationFramework - Create User executed !!
+Name of test method sucessfully executed:testCreateUserData
+]]></system-out>
+  </testcase>
+  <testcase name="testGetUserData" classname="api.testcases.UserTest2" time="1.097">
+    <system-out><![CDATA[Name of test method started:testGetUserData
+Get User Data
+HTTP/1.1 200 OK
+Date: Tue, 06 May 2025 13:58:46 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 778872501,
+    "username": "quincy.lindgren",
+    "firstName": "Tana",
+    "lastName": "Feil",
+    "email": "mike.legros@example.com",
+    "password": "r1cmm2jx",
+    "phone": "(501) 533-2214",
+    "userStatus": 0
+}
+[INFO ] 2025-05-06 19:28:46.712 [main] RestAssuredAutomationFramework - Get User executed !!
+Name of test method sucessfully executed:testGetUserData
+]]></system-out>
+  </testcase>
+  <testcase name="testUpdateUserData" classname="api.testcases.UserTest2" time="2.142">
+    <system-out><![CDATA[Name of test method started:testUpdateUserData
+Update User Data
+HTTP/1.1 200 OK
+Date: Tue, 06 May 2025 13:58:47 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "778872501"
+}
+After Update User Data
+HTTP/1.1 200 OK
+Date: Tue, 06 May 2025 13:58:48 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 778872501,
+    "username": "quincy.lindgren",
+    "firstName": "Norris",
+    "lastName": "Feil",
+    "email": "mike.legros@example.com",
+    "password": "r1cmm2jx",
+    "phone": "(501) 533-2214",
+    "userStatus": 0
+}
+[INFO ] 2025-05-06 19:28:48.855 [main] RestAssuredAutomationFramework - Update User executed !!
+Name of test method sucessfully executed:testUpdateUserData
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteUserData" classname="api.testcases.UserTest2" time="1.04">
+    <system-out><![CDATA[Name of test method started:testDeleteUserData
+Delete User Data
+HTTP/1.1 200 OK
+Date: Tue, 06 May 2025 13:58:49 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "quincy.lindgren"
+}
+[INFO ] 2025-05-06 19:28:49.892 [main] RestAssuredAutomationFramework - Delete User executed !!
 Name of test method sucessfully executed:testDeleteUserData
 ]]></system-out>
   </testcase>

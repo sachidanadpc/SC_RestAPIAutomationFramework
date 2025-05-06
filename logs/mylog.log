@@ -1,0 +1,65 @@
+[INFO ] 2025-05-06 14:50:49.131 [main] RestAssuredAutomationFramework - Create User executed !!
+[INFO ] 2025-05-06 14:50:51.270 [main] RestAssuredAutomationFramework - Get User executed !!
+[INFO ] 2025-05-06 14:50:55.453 [main] RestAssuredAutomationFramework - Update User executed !!
+[INFO ] 2025-05-06 14:50:58.534 [main] RestAssuredAutomationFramework - Delete User executed !!
+[INFO ] 2025-05-06 17:36:50.134 [main] RestAssuredAutomationFramework - Create Pet executed !!
+[INFO ] 2025-05-06 17:36:52.287 [main] RestAssuredAutomationFramework - Get Pet executed !!
+[INFO ] 2025-05-06 17:43:44.587 [main] RestAssuredAutomationFramework - Create Pet executed !!
+[INFO ] 2025-05-06 17:43:46.717 [main] RestAssuredAutomationFramework - Get Pet executed !!
+[INFO ] 2025-05-06 17:46:48.671 [main] RestAssuredAutomationFramework - Create Pet executed !!
+[INFO ] 2025-05-06 17:46:50.825 [main] RestAssuredAutomationFramework - Get Pet executed !!
+[INFO ] 2025-05-06 17:46:54.994 [main] RestAssuredAutomationFramework - Update Pet executed !!
+[INFO ] 2025-05-06 17:50:51.416 [main] RestAssuredAutomationFramework - Create User executed !!
+[INFO ] 2025-05-06 17:50:55.716 [main] RestAssuredAutomationFramework - Update User executed !!
+[INFO ] 2025-05-06 17:50:58.774 [main] RestAssuredAutomationFramework - Delete User executed !!
+[INFO ] 2025-05-06 17:52:43.066 [main] RestAssuredAutomationFramework - Create User executed !!
+[INFO ] 2025-05-06 17:52:47.349 [main] RestAssuredAutomationFramework - Update User executed !!
+[INFO ] 2025-05-06 17:52:50.426 [main] RestAssuredAutomationFramework - Delete User executed !!
+[INFO ] 2025-05-06 17:54:24.584 [main] RestAssuredAutomationFramework - Create User executed !!
+[INFO ] 2025-05-06 17:54:26.738 [main] RestAssuredAutomationFramework - Get User executed !!
+[INFO ] 2025-05-06 17:54:31.465 [main] RestAssuredAutomationFramework - Update User executed !!
+[INFO ] 2025-05-06 17:54:34.529 [main] RestAssuredAutomationFramework - Delete User executed !!
+[INFO ] 2025-05-06 17:54:36.654 [main] RestAssuredAutomationFramework - Create Pet executed !!
+[INFO ] 2025-05-06 17:54:38.726 [main] RestAssuredAutomationFramework - Get Pet executed !!
+[INFO ] 2025-05-06 17:54:42.886 [main] RestAssuredAutomationFramework - Update Pet executed !!
+[INFO ] 2025-05-06 17:54:47.047 [main] RestAssuredAutomationFramework - Create User executed !!
+[INFO ] 2025-05-06 17:54:50.205 [main] RestAssuredAutomationFramework - Update User executed !!
+[INFO ] 2025-05-06 17:54:51.856 [main] RestAssuredAutomationFramework - Delete User executed !!
+[INFO ] 2025-05-06 18:01:34.759 [main] RestAssuredAutomationFramework - Create User executed !!
+[INFO ] 2025-05-06 18:01:36.897 [main] RestAssuredAutomationFramework - Get User executed !!
+[INFO ] 2025-05-06 18:01:41.048 [main] RestAssuredAutomationFramework - Update User executed !!
+[INFO ] 2025-05-06 18:01:44.155 [main] RestAssuredAutomationFramework - Delete User executed !!
+[INFO ] 2025-05-06 18:01:46.315 [main] RestAssuredAutomationFramework - Create Pet executed !!
+[INFO ] 2025-05-06 18:01:48.411 [main] RestAssuredAutomationFramework - Get Pet executed !!
+[INFO ] 2025-05-06 18:01:52.533 [main] RestAssuredAutomationFramework - Update Pet executed !!
+[INFO ] 2025-05-06 18:01:56.708 [main] RestAssuredAutomationFramework - Create User executed !!
+[INFO ] 2025-05-06 18:01:57.762 [main] RestAssuredAutomationFramework - Get User executed !!
+[INFO ] 2025-05-06 18:01:59.845 [main] RestAssuredAutomationFramework - Update User executed !!
+[INFO ] 2025-05-06 18:50:48.729 [main] RestAssuredAutomationFramework - Create Order for Pet executed !!
+[INFO ] 2025-05-06 18:54:41.512 [main] RestAssuredAutomationFramework - Create Order for Pet executed !!
+[INFO ] 2025-05-06 18:54:43.663 [main] RestAssuredAutomationFramework - Get Order executed !!
+[INFO ] 2025-05-06 18:59:14.352 [main] RestAssuredAutomationFramework - Create Order for Pet executed !!
+[INFO ] 2025-05-06 18:59:42.435 [main] RestAssuredAutomationFramework - Create Order for Pet executed !!
+[INFO ] 2025-05-06 18:59:46.613 [main] RestAssuredAutomationFramework - Delete Order executed !!
+[INFO ] 2025-05-06 19:19:26.011 [main] RestAssuredAutomationFramework - Create Order for Pet executed !!
+[INFO ] 2025-05-06 19:19:29.153 [main] RestAssuredAutomationFramework - Get Order executed !!
+[INFO ] 2025-05-06 19:19:36.296 [main] RestAssuredAutomationFramework - Delete Order executed !!
+[INFO ] 2025-05-06 19:22:20.910 [main] RestAssuredAutomationFramework - Create Pet executed !!
+[INFO ] 2025-05-06 19:22:24.048 [main] RestAssuredAutomationFramework - Get Pet executed !!
+[INFO ] 2025-05-06 19:22:28.174 [main] RestAssuredAutomationFramework - Update Pet executed !!
+[INFO ] 2025-05-06 19:24:10.340 [main] RestAssuredAutomationFramework - Create User executed !!
+[INFO ] 2025-05-06 19:24:20.785 [main] RestAssuredAutomationFramework - Update User executed !!
+[INFO ] 2025-05-06 19:24:23.885 [main] RestAssuredAutomationFramework - Delete User executed !!
+[INFO ] 2025-05-06 19:28:16.926 [main] RestAssuredAutomationFramework - Create User executed !!
+[INFO ] 2025-05-06 19:28:18.109 [main] RestAssuredAutomationFramework - Get User executed !!
+[INFO ] 2025-05-06 19:28:20.264 [main] RestAssuredAutomationFramework - Update User executed !!
+[INFO ] 2025-05-06 19:28:21.305 [main] RestAssuredAutomationFramework - Delete User executed !!
+[INFO ] 2025-05-06 19:28:22.469 [main] RestAssuredAutomationFramework - Create Pet executed !!
+[INFO ] 2025-05-06 19:28:23.499 [main] RestAssuredAutomationFramework - Get Pet executed !!
+[INFO ] 2025-05-06 19:28:25.677 [main] RestAssuredAutomationFramework - Update Pet executed !!
+[INFO ] 2025-05-06 19:28:33.012 [main] RestAssuredAutomationFramework - Create Order for Pet executed !!
+[INFO ] 2025-05-06 19:28:44.505 [main] RestAssuredAutomationFramework - Delete Order executed !!
+[INFO ] 2025-05-06 19:28:45.613 [main] RestAssuredAutomationFramework - Create User executed !!
+[INFO ] 2025-05-06 19:28:46.712 [main] RestAssuredAutomationFramework - Get User executed !!
+[INFO ] 2025-05-06 19:28:48.855 [main] RestAssuredAutomationFramework - Update User executed !!
+[INFO ] 2025-05-06 19:28:49.892 [main] RestAssuredAutomationFramework - Delete User executed !!

@@ -4,11 +4,11 @@ import static io.restassured.RestAssured.given;
 
 import java.util.ResourceBundle;
 
-import api.payload.user;
+import api.payload.User;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
-public class userEndpoints2 {
+public class UserEndpoints2 {
 	
 	static ResourceBundle getURL()	
 	{
@@ -17,7 +17,7 @@ public class userEndpoints2 {
 		
 	} 
 	
-	public static Response createUser(user payload)	
+	public static Response createUser(User payload)	
 	{
 		String post_url = getURL().getString("post_url");
 		Response response  = given()
@@ -46,7 +46,7 @@ public class userEndpoints2 {
 				return response;
 	}
 	
-	public static Response UpdateUser(String userName, user payload)	
+	public static Response UpdateUser(String userName, User payload)	
 	{
 		
 		String update_url = getURL().getString("update_url");

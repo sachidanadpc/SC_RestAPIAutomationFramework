@@ -1,17 +1,27 @@
 package api.payload;
 
-public class user {
+public class User {
 	
-	//POJO - Plain old Java Object
+	//POJO - Plain old Java Object for User
 	
-	  int id;
-	  String username;
-	  String firstName;
-	  String lastName;
-	  String email;
-	  String password;
-	  String phone;
-	  int userStatus=0;
+	/* Why do we need POJOs in API Testing?
+	In API test automation (e.g., using Rest Assured), we:
+	
+	Send and receive JSON
+	Use POJO classes to map JSON data to Java objects automatically
+
+	This helps you:
+	Serialize (Java → JSON) when sending request payloads
+	Deserialize (JSON → Java) when validating response data */
+	
+	private int id;
+	private String username;
+	private String firstName;
+	private String lastName;
+	private String email;
+	private String password;
+	private String phone;
+	private int userStatus=0;
 	  
 	  
 	public int getId() {

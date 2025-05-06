@@ -3,7 +3,10 @@
 <suite name="End to end api testing">
   <test thread-count="5" name="Test">
   <classes>
-    <class name="api.testcases.UserTest"/>   
+		<class name="api.testcases.UserTest"/>   
+		<class name="api.testcases.PetTest"/>
+		<class name="api.testcases.StoreTest"/>
+		<class name="api.testcases.UserTest2"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- End to end api testing -->

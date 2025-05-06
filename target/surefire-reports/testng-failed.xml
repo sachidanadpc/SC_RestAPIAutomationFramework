@@ -6,14 +6,20 @@
   </listeners>
   <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
-      <class name="api.testcases.UserTest">
+      <class name="api.testcases.StoreTest">
         <methods>
-          <include name="testDeleteUserData"/>
-          <include name="generateTestData"/>
-          <include name="testCreateUserData"/>
-          <include name="testGetUserData"/>
+          <include name="generateStoreTestData"/>
+          <include name="testCreateAnOrderData"/>
+          <include name="testGetAnOrderData"/>
         </methods>
-      </class> <!-- api.testcases.UserTest -->
+      </class> <!-- api.testcases.StoreTest -->
+      <class name="api.testcases.PetTest">
+        <methods>
+          <include name="testDeletePetData"/>
+          <include name="testCreatePetData"/>
+          <include name="generatePetTestData"/>
+        </methods>
+      </class> <!-- api.testcases.PetTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

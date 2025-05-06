@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">15 methods, 2 failed,   13 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.testcases.PetTest" class="method navigator-link" hash-for-method="testDeletePetData">testDeletePetData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.testcases.StoreTest" class="method navigator-link" hash-for-method="testGetAnOrderData">testGetAnOrderData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +122,27 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.testcases.StoreTest" class="method navigator-link" hash-for-method="testCreateAnOrderData">testCreateAnOrderData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.testcases.PetTest" class="method navigator-link" hash-for-method="testCreatePetData">testCreatePetData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.testcases.UserTest2" class="method navigator-link" hash-for-method="testCreateUserData">testCreateUserData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="api.testcases.UserTest" class="method navigator-link" hash-for-method="testCreateUserData">testCreateUserData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.testcases.StoreTest" class="method navigator-link" hash-for-method="testDeleteAnOrderData">testDeleteAnOrderData</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -113,7 +152,32 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.testcases.UserTest2" class="method navigator-link" hash-for-method="testDeleteUserData">testDeleteUserData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.testcases.PetTest" class="method navigator-link" hash-for-method="testGetPetData">testGetPetData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.testcases.UserTest2" class="method navigator-link" hash-for-method="testGetUserData">testGetUserData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="api.testcases.UserTest" class="method navigator-link" hash-for-method="testGetUserData">testGetUserData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.testcases.PetTest" class="method navigator-link" hash-for-method="testUpdatePetData">testUpdatePetData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.testcases.UserTest2" class="method navigator-link" hash-for-method="testUpdateUserData">testUpdateUserData</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -133,6 +197,50 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">api.testcases.StoreTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetAnOrderData">
+                  </a> <!-- testGetAnOrderData -->
+                  <span class="method-name">testGetAnOrderData</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [404]
+	at api.testcases.StoreTest.testGetAnOrderData(StoreTest.java:107)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Find purchase order by ID)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">api.testcases.PetTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeletePetData">
+                  </a> <!-- testDeletePetData -->
+                  <span class="method-name">testDeletePetData</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [405]
+	at api.testcases.PetTest.testDeletePetData(PetTest.java:178)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(End to end  Delete user by petId)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -177,6 +285,111 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">api.testcases.StoreTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateAnOrderData">
+                  </a> <!-- testCreateAnOrderData -->
+                  <span class="method-name">testCreateAnOrderData</span>
+                  <em>
+(Place an order for Pet)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteAnOrderData">
+                  </a> <!-- testDeleteAnOrderData -->
+                  <span class="method-name">testDeleteAnOrderData</span>
+                  <em>
+(Delete purchase order by ID)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">api.testcases.PetTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreatePetData">
+                  </a> <!-- testCreatePetData -->
+                  <span class="method-name">testCreatePetData</span>
+                  <em>
+(End to end Everything about your Pets)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetPetData">
+                  </a> <!-- testGetPetData -->
+                  <span class="method-name">testGetPetData</span>
+                  <em>
+(End to end  Get user by Pet Id)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdatePetData">
+                  </a> <!-- testUpdatePetData -->
+                  <span class="method-name">testUpdatePetData</span>
+                  <em>
+(End to end Updated existing pet)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">api.testcases.UserTest2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateUserData">
+                  </a> <!-- testCreateUserData -->
+                  <span class="method-name">testCreateUserData</span>
+                  <em>
+(End to end  Operations about user)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteUserData">
+                  </a> <!-- testDeleteUserData -->
+                  <span class="method-name">testDeleteUserData</span>
+                  <em>
+(End to end  Operations about user)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetUserData">
+                  </a> <!-- testGetUserData -->
+                  <span class="method-name">testGetUserData</span>
+                  <em>
+(End to end  Operations about user)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateUserData">
+                  </a> <!-- testUpdateUserData -->
+                  <span class="method-name">testUpdateUserData</span>
+                  <em>
+(End to end  Operations about user)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -193,6 +406,9 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;api.testcases.UserTest&quot;/&gt;
+      &lt;class name=&quot;api.testcases.PetTest&quot;/&gt;
+      &lt;class name=&quot;api.testcases.StoreTest&quot;/&gt;
+      &lt;class name=&quot;api.testcases.UserTest2&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -206,7 +422,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -232,28 +448,72 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(15);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testCreateUserData')
-data.setCell(0, 2, 'api.testcases.UserTest')
-data.setCell(0, 3, 4749);
+data.setCell(0, 1, 'testDeletePetData')
+data.setCell(0, 2, 'api.testcases.PetTest')
+data.setCell(0, 3, 6252);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testUpdateUserData')
-data.setCell(1, 2, 'api.testcases.UserTest')
-data.setCell(1, 3, 4150);
+data.setCell(1, 1, 'testGetAnOrderData')
+data.setCell(1, 2, 'api.testcases.StoreTest')
+data.setCell(1, 3, 6227);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testGetUserData')
-data.setCell(2, 2, 'api.testcases.UserTest')
-data.setCell(2, 3, 3106);
+data.setCell(2, 1, 'testDeleteAnOrderData')
+data.setCell(2, 2, 'api.testcases.StoreTest')
+data.setCell(2, 3, 5256);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testDeleteUserData')
+data.setCell(3, 1, 'testCreateUserData')
 data.setCell(3, 2, 'api.testcases.UserTest')
-data.setCell(3, 3, 2094);
+data.setCell(3, 3, 2511);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testUpdatePetData')
+data.setCell(4, 2, 'api.testcases.PetTest')
+data.setCell(4, 3, 2176);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testUpdateUserData')
+data.setCell(5, 2, 'api.testcases.UserTest')
+data.setCell(5, 3, 2152);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testUpdateUserData')
+data.setCell(6, 2, 'api.testcases.UserTest2')
+data.setCell(6, 3, 2139);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testCreatePetData')
+data.setCell(7, 2, 'api.testcases.PetTest')
+data.setCell(7, 3, 1125);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testGetUserData')
+data.setCell(8, 2, 'api.testcases.UserTest')
+data.setCell(8, 3, 1110);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testGetUserData')
+data.setCell(9, 2, 'api.testcases.UserTest2')
+data.setCell(9, 3, 1097);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testCreateUserData')
+data.setCell(10, 2, 'api.testcases.UserTest2')
+data.setCell(10, 3, 1086);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testCreateAnOrderData')
+data.setCell(11, 2, 'api.testcases.StoreTest')
+data.setCell(11, 3, 1068);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testDeleteUserData')
+data.setCell(12, 2, 'api.testcases.UserTest')
+data.setCell(12, 3, 1038);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testDeleteUserData')
+data.setCell(13, 2, 'api.testcases.UserTest2')
+data.setCell(13, 3, 1034);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testGetPetData')
+data.setCell(14, 2, 'api.testcases.PetTest')
+data.setCell(14, 3, 1028);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <span class="suite-total-time">Total running time: 35 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -286,19 +546,88 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testCreateUserData</span>
-                <span class="method-start">947 ms</span>
+                <span class="method-start">538 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testGetUserData</span>
-                <span class="method-start">5772 ms</span>
+                <span class="method-start">3121 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testUpdateUserData</span>
-                <span class="method-start">8886 ms</span>
+                <span class="method-start">4234 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testDeleteUserData</span>
-                <span class="method-start">13042 ms</span>
+                <span class="method-start">6389 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">api.testcases.PetTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">generatePetTestData</span>
+                <span class="method-start">7431 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testCreatePetData</span>
+                <span class="method-start">7466 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetPetData</span>
+                <span class="method-start">8593 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testUpdatePetData</span>
+                <span class="method-start">9623 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDeletePetData</span>
+                <span class="method-start">11803 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">api.testcases.StoreTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">generateStoreTestData</span>
+                <span class="method-start">18063 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testCreateAnOrderData</span>
+                <span class="method-start">18066 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testGetAnOrderData</span>
+                <span class="method-start">19138 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDeleteAnOrderData</span>
+                <span class="method-start">25371 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">api.testcases.UserTest2</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">generateTestData</span>
+                <span class="method-start">30629 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testCreateUserData</span>
+                <span class="method-start">30649 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetUserData</span>
+                <span class="method-start">31738 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testUpdateUserData</span>
+                <span class="method-start">32838 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDeleteUserData</span>
+                <span class="method-start">34981 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
