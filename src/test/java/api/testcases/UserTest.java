@@ -8,13 +8,24 @@ import org.testng.annotations.Test;
 import com.github.javafaker.Faker;
 import api.endpoints.userEndpoints;
 import api.payload.user;
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
 import io.restassured.response.Response;
 
+
+@Epic("PetStore-End to end  Operations about user")
+@Feature("Create Get, Update Delete Users")
 public class UserTest {	
 	
 	Faker faker;
 	user userPayload;
 	public static Logger logger;
+	
+	
 	
 	@BeforeClass	
 	public void generateTestData()
@@ -35,7 +46,11 @@ public class UserTest {
 	}
 	
 	
-	@Test(priority=1)
+	@Story("Create User")
+	@Test(priority=1, description= "End to end  Operations about user")
+	@Description("Create User POST API")
+	@Severity(SeverityLevel.CRITICAL)
+	
 	public void testCreateUserData()
 	{
 		Response response =  userEndpoints.createUser(userPayload);					
@@ -56,7 +71,11 @@ public class UserTest {
 		}
 	}
 	
-	@Test(priority=2, dependsOnMethods = {"testCreateUserData"})
+	
+	@Story("Get User")
+	@Test(priority=2, description= "End to end  Get user by user name", dependsOnMethods = {"testCreateUserData"})
+	@Description("Get User POST API")
+	@Severity(SeverityLevel.CRITICAL)
 	public void testGetUserData()
 	{
 		Response response =  userEndpoints.GetUser(this.userPayload.getUsername());
@@ -79,7 +98,10 @@ public class UserTest {
 		}
 	}
 	
-	@Test(priority=3, dependsOnMethods = {"testCreateUserData"})
+	@Story("Update User")
+	@Test(priority=3, description= "End to end  Updated user by user name", dependsOnMethods = {"testCreateUserData"})
+	@Description("Update User POST API")
+	@Severity(SeverityLevel.CRITICAL)
 	public void testUpdateUserData()
 	{
 		userPayload.setFirstName(faker.name().firstName());
@@ -110,7 +132,10 @@ public class UserTest {
 		
 	}
 	
-	@Test(priority=4, dependsOnMethods = {"testCreateUserData"})
+	@Story("Delete User")
+	@Test(priority=4, description= "End to end  Delete user by user name", dependsOnMethods = {"testCreateUserData"})
+	@Description("Delete User POST API")
+	@Severity(SeverityLevel.CRITICAL)
 	public void testDeleteUserData()
 	{
 		Response response =  userEndpoints.DeleteUser(this.userPayload.getUsername());

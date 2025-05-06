@@ -8,6 +8,7 @@
     <classes>
       <class name="api.testcases.UserTest">
         <methods>
+          <include name="testDeleteUserData"/>
           <include name="generateTestData"/>
           <include name="testCreateUserData"/>
           <include name="testGetUserData"/>
